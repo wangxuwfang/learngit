@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>
+MIUI官方网站
+</title>
+<style type="text/css">
+.ys{color:white;}
+.ys1{ color:#868686;}
+.aaa:hover a{ color:#868686;}
+div#dingbu{backgroung-color:black; width:100%; height:5px; line-height:50px;}
+
+div#datu{ }
+
+div#tupian{ margin-left:;}
+
+div#dibu{ }
+</style>
+</head>
+<body>
+<div id="dingbu">
+<span style=" padding-left:50px; font-size:18px; "><a href="#">MIUI</a></span>
+<span style=" padding-right:200px;"><a href="#" class="ys1">首页</a></span>
+<span style=" padding-right:200px;" class="aaa"><a href="#">MIUI17</a></span>
+<span style=" padding-right:200px;" class="aaa"><a href="#">下载</a></span>
+<span style=" padding-right:200px;" class="aaa"><a href="#">云服务</a></span>
+<span style=" padding-right:200px;" class="aaa"><a href="#">论坛</a></span>
+</div>
+
+
+<div id="datu">
+<marquee behavior="scroll" scrolldelay="50" scrollamount="3"><img src="1.jpg"></marquee>
+<marquee behavior="scroll" scrolldelay="50" scrollamount="3"><img src="2.jpg"></marquee>
+</div>
+
+
+<div id="tupian1">
+<img src="3.jpg">MIUI 7稳定版开放升级迄今最好的MIUI为你设计
+</div>
+<div id="tupian2">
+<img src="4.jpg">产品经理茶话会  聊聊MIUI7又快又稳定的MIUI为你设计的好体验
+</div>
+<div id="tupian3">
+<img src="5.jpg">MIUI第263周发布公告私密文件夹更全能  更好用
+</div>
+
+
+
+<div id="dibu">
+新浪微博官方微信官方贴吧全球粉丝站简体中文
+Copyright © 2015 MIUI 京ICP备10046444号 | 京公网安备1101080212535号 | 京ICP证110507号
+</div>
+</body>
+</html>
