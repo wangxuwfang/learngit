@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width ,initial-scale=1 ,maximum-scale=1,user-scalable=0">
+    <title>
+        用电量查询
+    </title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body{ background:url(6.png)no-repeat;}
+    .ys {
+        color: #fff;
+    }
+    
+    div#dingbu {
+        background-color: black;
+        width: 100%;
+        height: 10%;
+       
+    }
+    
+    .fan {
+        float: left;
+        margin-left: 5%;
+        margin-top: 9%;
+        font-size: 40px;
+    }
+    
+    .dian {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        background-color: #fff;
+        float: left;
+        margin-top: 10%;
+    }
+    
+    .dian1 {
+        margin-left: 71%;
+    }
+    
+    .dian2 {
+        margin-left: 10px;
+    }
+    
+    .dian3 {
+        margin-left: 10px;
+    }
+    
+    div#zhongjian {
+        background-color: rgb(252, 212, 175);
+         filter:Alpha(opacity=50);
+    position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+
+        background-repeat: repeat-y;
+        height: 82%;
+        width: 85%;
+        margin-left: 7%;
+        margin-top: 7%;
+    }
+    .dom{ position:absolute;}
+    </style>
+    <script type="text/javascript">
+     function loadXMLDoc(){
+    var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function(){
+  	if (xmlhttp.readyState==4 & & xmlhttp.status==200)
+  	{
+  		document.getElementById("shijian").innerHTML=xmlhttp.responseText;
+  	}
+  }
+}
+  xmlhttp.open("POST","",true);
+  xmlhttp.send();
+    </script>
+</head>
+
+<body>
+    <div id="dingbu">
+      <a href="#" class="ys fan"> <img src="8.png"><span style="  margin-top:-5%;">返回</span></a>
+        <span class="dian dian1">
+</span>
+        <span class="dian dian2">
+</span>
+        <span class="dian dian3">
+</span>
+    </div>
+    <div id="zhongjian">
+        <span style=" float:left; border:1px solid rgb(228,122,64); border-radius:50%; background-color:rgb(228,122,64); width:33%; height:21%; font-size:50px; margin-left:32.5%; margin-top:50%; color:rgb(194,250,220);"><span style=" float:left; margin-left:6%; margin-top:40%; letter-spacing:5px; z-index:20;">电量较少</span></span>
+        <span style=" float:left; border-bottom:4px solid rgb(228,122,64); width:20%; margin-top:-16%; margin-left:15%; z-index:10;"></span>
+        <span style=" float:left; border-bottom:4px solid rgb(228,122,64); width:20%; margin-top:-16%; margin-left:65%; z-index:10;"></span>
+        <span style=" float:left; border-left:4px solid rgb(228,122,64); height:60%; margin-left:49%; margin-top:-60%; z-index:10;"></span>
+        <span style=" float:left; border:1px solid rgb(228,122,64); border-radius:50%; background-color:rgb(228,122,64); height:1.7%; width:2.3%; margin-left:-37%; margin-top:-17.3%; "></span>
+        <span style=" float:left; border:1px solid rgb(228,122,64); border-radius:50%; background-color:rgb(228,122,64); height:1.7%; width:2.3%; margin-left:33%; margin-top:-17.3%; "></span>
+        <span style=" float:left; border:1px solid rgb(228,122,64); border-radius:50%; background-color:rgb(228,122,64); height:1.7%; width:2.3%; margin-left:-1.6%; margin-top:-62%; "></span>
+        <span style=" float:left; border:1px solid rgb(228,122,64); border-radius:50%; background-color:rgb(228,122,64); height:1.7%; width:2.3%; margin-left:-1.6%; margin-top:33%; "></span>
+    </div>
+    <div class="qiantao">
+<span style=" float:left; border:1px solid rgb(228,122,64); background-color:rgb(228,122,64); border-radius:18px; height:8.5%; width:45%; margin-left:22%; margin-top:-22%; "></span>
+<span style=" float:left; border:1px solid rgb(255,211,187); border-radius:18px; background-color:rgb(255,211,187); height:6%; width:24%; margin-left:24%;  margin-top:-20%;"></span>
+<span style=" float:left; border:1px solid rgb(228,122,64); background-color:rgb(228,122,64); height:6%; width:8%; margin-left:63%; margin-top:-20%;"></span>
+    </div>
+    <div id="wenzi">
+        <p id="shijian" style=" float:left; font-size:65px;  margin-top:-130%; margin-left:30%; z-index:20">2015年11月6日</p>
+        <span style=" font-size:50px; float:left; margin-left:21%; margin-top:-110%;">最新读数</span>
+        <span id="zuixin" style=" float:left; font-size:50px; margin-left:23%; margin-top:-100%;">2323度</span>
+        <span style=" font-size:50px; float:left; margin-left:56%; margin-top:-110%;">电额余度</span>
+        <span id="yudu" style=" float:left; font-size:50px; margin-left:59%; margin-top:-100%;">223度</span>
+        <span style=" font-size:50px; float:left; margin-left:21%; margin-top:-65%;">本月用电</span>
+        <span id="benyue" style=" float:left; font-size:50px; margin-left:23%; margin-top:-55%;">230度</span>
+        <span style=" font-size:50px; float:left; margin-left:56%; margin-top:-65%;">现金余额</span>
+        <span id="yue" style=" float:left; font-size:50px; margin-left:59%; margin-top:-55%;">123元</span>
+        <p id="tianshu" style=" font-size:50px; float:left; margin-top:-18%;  margin-left:25%;">预计能用</p>
+        <span style=" font-size:50px; float:left; margin-left:50%; margin-top:-18%;">123天</span>
+    </div>
+
+</body>
+
+</html>

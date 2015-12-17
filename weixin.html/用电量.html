@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width ,initial-scale=1 ,maximum-scale=1,user-scalable=0">
+    <title>
+        用电量查询
+    </title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: 微软雅黑;
+    }
+    
+    .ys {
+        color: black;
+    }
+    
+    .ys1 {
+        color: #fff;
+    }
+    
+    body {
+        background: url("5.png");
+    }
+    
+    div#dingbu {
+        background-color: black;
+        width: 100%;
+        height: 10%;
+        color: #fff;
+    }
+    
+    .fanhui {
+        float: left;
+        font-size: 35px;
+        margin-top: 8%;
+        margin-left: 4%;
+    }
+    
+    div#tupian {
+        text-align: center;
+        margin-top: 18%;
+        margin-left: 20%;
+    }
+    
+    div#quyu {
+        float: left;
+        text-align: center;
+        margin-top: 5%;
+        font-family: ;
+    }
+    
+    .yuan {
+        margin-left: 40%;
+    }
+    
+    .yuan.jiantou {
+        margin-top: 45%;
+    }
+    </style>
+    <script type="text/javascript">
+    function showhao(str)
+    {
+        var xmlhttp;
+        if (str=="")
+        {
+        document.getElementById("").innerHTML="";
+        return;
+    }
+    var ajax = function(method, url, cb, data, dataType) {
+
+        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        xhr.open(method.toUpperCase(), url, true);
+        if (method.toLowerCase() == 'get') {
+            xhr.send(null);
+        } else {
+            var contentType = 'application/x-www-form-urlencoded';
+            if (dataType) {
+                if (dataType.toLowerCase() == 'json') {
+                    contentType = 'application/json'
+                };
+            };
+            xhr.setRequestHeader("Content-type", contentType);
+            xhr.send(220706);
+        };
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    cb(xhr.responseText);
+                };
+           };
+        };
+    };
+    </script>
+</head>
+
+<body background:url( "5.png");>
+    <div id="dingbu">
+        <a href="#" class="ys1 fanhui">
+            <img src="8.png">返回
+        </a>
+        <a href="#">
+            <span style=" border:1px solid transparent; width:150px; height:509px; float:right; margin-right:10px; margin-top:8%;">
+<span style=" margin-right:60px; float:right; border: 1px solid #fff; border-radius:50%; width:10px; height:10px; background-color:#fff; margin-top:20px;"></span>
+            <span style=" margin-right:10px; float:right; border: 1px solid #fff; border-radius:50%; width:10px; height:10px; background-color:#fff;margin-top:20px"></span>
+            <span style=" margin-right:10px; float:right; border: 1px solid #fff; border-radius:50%; width:10px; height:10px; background-color:#fff;margin-top:20px">
+</span>
+            </span>
+        </a>
+    </div>
+    <div id="tupian">
+        <img src="4.png">
+    </div>
+    <div id="quyu">
+            <form action="" style=" float:left; margin-top:3%;  border:1px solid rgb(222,235,230); border-radius:35px; width:65%; height:9%; font-size:50px; background-color:rgb(222,235,230); float:left; margin-left:18%; margin-top:-3%; ">
+            <lable>
+            <span style=" float:left; margin-left:5%; margin-top:5%;">居住区域</span>
+            <select name="fangjianhao" onchange="showhao(this.value)" style=" width:45%; height:100%; font-size:50px; margin-left:-4%; background-color:rgb(222,235,230); border:0;">
+            <option value="医学院">医学院</option>
+            <option value="前湖校区">前湖校区</option>
+            <option value="青山湖校区">青山湖校区</option>>
+            </select>
+            </lable>
+            </form>
+            <span style=" float:left; margin-left:-40%;"><img src="1.png"></span>
+        <p style=" border:1px solid rgb(222,235,230); border-radius:31px; width:65%; height:9%; font-size:50px;  background-color:rgb(222,235,230); float:left; margin-left:18%; margin-top:10%;">
+            <span action="" style=" float:left; margin-left:5%; margin-top:5%;">
+            
+            寝室号
+           
+            </span>
+            <span style=" float:left; margin-left:12%; margin-top:5%;"><img src="1.png"></span>
+            <input name="" style=" float:left; margin-left:54%; margin-top:-18%; ">220706</span>
+        </p>
+    </div>
+    <div class="yuan">
+        <span style="border:1px solid white;
+        height:12.8%; width:35%; background-color:white; float:left; border-radius:50%; margin-top:20%;"></span></div>
+    <div class="yuan jiantou" style=" float:left; position:absolute; margin-top:67%; margin-left:43%;">
+        <a href="file:///C:/Users/asus/Desktop/%E5%BE%AE%E4%BF%A1%E9%A1%B5%E9%9D%A2/%E7%94%A8%E7%94%B5%E6%9F%A5%E8%AF%A2.html"><img src="3.png"></a>
+    </div>
+</body>
+
+</html>
