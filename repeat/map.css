@@ -1,10 +1,10 @@
-*{ margin: 0; padding: 0; text-decoration: none;}
+ *{ margin: 0; padding: 0; text-decoration: none;}
 #top{ height: 65px; background-color: rgb(118,199,192); color: white; font-weight: bolder;}
 #top .right{ float: left; margin-left: 6.8%; margin-top: 1%;}
 #top .right .mou {  font-size: 2em;}
 #top .right .ver { font-size: 1.1em;}
 #top .left { float: right; font-size: 1.1em; margin-right: 6.8%; margin-top: 1.7%; word-spacing: 25px;}
-#top .left .search { outline: none; height: 5%; width: 10%; border-radius: 10px; position: absolute; left: 80%; top: 8%; border: 3px solid red; }
+#search { display: none; outline: none; height: 4.7%; width: 12%; border-radius: 10px; position: absolute; left: 81%; top: 7%; border: 3px solid red; font-size: 1em; color: gray;}
 #top-bottom { font-weight: bolder; height: 65px; background-color: rgb(236,236,236);}
 #top-bottom .left{ float: left; font-size: 1.3em; margin-left: 6.8%; margin-top: 1.4%;}
 #top-bottom .right{ float: right; margin-right: 6.8%; font-size: 1.2em; margin-top: 1.3%;}
@@ -16,7 +16,7 @@
 #middle .input{ float: left; margin-top: 10%; margin-left: -15%; }
 #middle .input .input1{ height: 40px; width: 450px; line-height: 4.5; background-color: rgb(229,230,230); border: 1px solid rgb(229,230,230); border-radius: 10px; outline: none; font-size: 1em;}
 #middle .input .textarea { width: 700px; height: 220px; outline: none; background-color: rgb(229,230,230); border: 0; border-radius: 3px;}
-#middle .input .button { background-color: red; height: 40px; width: 150px; border: 0; margin-left: -65%; color: red; font-size: 1em;}
+#middle .input .button { background-color: red; height: 40px; width: 150px; border: 0; color: white; font-size: 1em;}
 #middle .name{ float: left; margin-top: 8.5%; margin-left: 4%; font-weight: bolder; font-size: 1.5em; line-height: 3;}
 #middle .adress {float: right; margin-right: 16.8%; width: 15%; line-height: 3;}
 #middle .adress .AD{  font-size: 1.2em; font-weight: bolder; margin-top: 20%; line-height: 4;}

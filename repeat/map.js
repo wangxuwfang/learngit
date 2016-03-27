@@ -1,6 +1,6 @@
-function onclickment(){
-	var search = document.getElementsByClassName("search");
-	search.style.display="block";
+function onclicksearch () {
+	var search = document.getElementById('search');
+	search.style.display= "block";
 }
 
 
