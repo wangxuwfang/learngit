@@ -4,6 +4,7 @@
 #top .right .mou {  font-size: 2em;}
 #top .right .ver { font-size: 1.1em;}
 #top .left { float: right; font-size: 1.1em; margin-right: 6.8%; margin-top: 1.7%; word-spacing: 25px;}
+#top .left .home { border: 1px solid red; height: 30px;}
 #search { display: none; outline: none; height: 4.7%; width: 12%; border-radius: 10px; position: absolute; left: 81%; top: 7%; border: 3px solid red; font-size: 1em; color: gray;}
 #top-bottom { font-weight: bolder; height: 65px; background-color: rgb(236,236,236);}
 #top-bottom .left{ float: left; font-size: 1.3em; margin-left: 6.8%; margin-top: 1.4%;}
